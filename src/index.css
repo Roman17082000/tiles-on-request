@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Дополнительные базовые стили */
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold;
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-600;
+}
