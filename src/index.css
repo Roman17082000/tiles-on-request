@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Дополнительные базовые стили */
 body {
   @apply bg-gray-100 text-gray-800 font-sans;
   margin: 0;

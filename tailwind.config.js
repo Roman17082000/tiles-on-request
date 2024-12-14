@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Подключаем все файлы в src
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {}, // Добавь сюда свои кастомные стили, если нужно
+    extend: {},
   },
-  plugins: [], // Можешь добавить Tailwind-плагины здесь
+  plugins: [],
 };

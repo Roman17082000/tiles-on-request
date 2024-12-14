@@ -57,10 +57,7 @@ const Tile: React.FC<TileProps> = ({
           <strong>Объект:</strong> {object.name}, {object.city}, {object.street}
         </p>
       </div>
-
-      {/* Линия, разделяющая информацию */}
       <hr className="my-4 border-t-2 border-gray-300" />
-
       <div className="mt-4 relative">
         <p
           ref={contentRef}
