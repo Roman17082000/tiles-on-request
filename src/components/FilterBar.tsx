@@ -5,7 +5,7 @@ import Button from "../components/UI/Button";
 
 const FilterBar: React.FC<FilterBarProps> = ({ state, onStateChange }) => {
   return (
-    <div className="flex flex-wrap items-center gap-2 mb-4">
+    <div className="flex flex-wrap items-center gap-2 mb-4 justify-center">
       {Object.entries(FILTER_OPTIONS).map(([key, label]) => (
         <Button
           key={key}

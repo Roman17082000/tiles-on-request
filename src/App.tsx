@@ -4,6 +4,7 @@ import FilterBar from "./components/FilterBar";
 import mockData from "../src/data/mockData.json";
 import "./index.css";
 import { FILTER_OPTIONS } from "./types/filterConfig.ts";
+import Loader from "./components/UI/Loader.tsx";
 
 type FilterKey = keyof typeof FILTER_OPTIONS;
 
@@ -17,11 +18,15 @@ const App: React.FC = () => {
   });
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 1000);
+    setTimeout(() => setIsLoading(false), 2000);
   }, []);
 
   if (isLoading) {
-    return <div className="text-center mt-10">Загрузка...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <Loader />
+      </div>
+    );
   }
 
   return (
