@@ -30,3 +30,22 @@ export const formatDuration = (seconds: number): string => {
   }
   return `${hours} ${hours === 1 ? "час" : "часов"}`;
 };
+
+export const formatFullName = (
+  lastName: string,
+  firstName: string,
+  middleName: string,
+  maxLength: number = 20,
+): string => {
+  let shortName = `${lastName} ${firstName[0]}.`;
+
+  if (middleName) {
+    shortName += `${middleName[0]}.`;
+  }
+
+  if (shortName.length > maxLength) {
+    return shortName.slice(0, maxLength - 3) + "...";
+  }
+
+  return shortName;
+};

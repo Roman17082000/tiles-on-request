@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# tiles-on-request
+tiles-on-request — это приложение на React с использованием TypeScript и Vite, 
+демонстрирующее интерактивные карточки (плитки заявок) с возможностью их раскрытия и анимации.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Стек технологий
+•	React,
+•	TypeScript,
+•	Vite: Быстрый и современный сборщик для фронтенд-приложений,
+•	Tailwind CSS,
+•	ESLint: Для поддержания чистого кода.
 
-Currently, two official plugins are available:
+Функционал
+•	Интерактивные карточки:
+•	Отображение основных данных о заявках: номер, статус, даты, система и объект.
+•	Адаптивный дизайн: Карточки корректно отображаются на всех устройствах.
+•	Гибкая структура: Чистая и понятная структура компонентов.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Установка и запуск
+1.	Клонируйте репозиторий:
+      // git clone https://github.com/your-username/tiles-on-request.git
+      // cd tiles-on-request
+2.  Установите зависимости:
+      // npm install
+3.  Запустите проект:
+      // npm run dev
 ```
